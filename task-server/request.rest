@@ -1,0 +1,40 @@
+GET http://localhost:8080/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRGlhbmEiLCJpYXQiOjE1OTc2NTQyMDUsImV4cCI6MTU5NzY1NDUwNX0.UQDU91bxbuSmvTCtO4ikGgM7VmISf_KISB20Ml5OIGk
+
+###
+
+DELETE http://localhost:8888/logout
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRGlhbmEiLCJpYXQiOjE1OTc2NTUxNDh9.aSpBGuL0rNO9JOAx2UlMy0Dwnik8VyvRPwqyV6s3wuw"
+}
+
+###
+
+POST http://localhost:8888/token 
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkRpYW5hIiwiaWF0IjoxNTk3Njc0MTg4fQ.6jJiKzjerNAdaEmLZD5MLqB0VtnYMUPsNSUGssyrU24"
+}
+
+###
+
+POST http://localhost:8888/login
+Content-Type: application/json
+
+{
+    "username": "Diana"
+}
+
+###
+
+POST http://localhost:8888/signup
+Content-Type: application/json
+
+{
+    "username": "Diana",
+    "email": "e",
+    "password": "p"
+}
