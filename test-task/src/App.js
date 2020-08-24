@@ -13,7 +13,7 @@ function App() {
         <Switch>
           <PrivateRoute exact path="/" component={Account} />
           <Route path="/login" component={Login} />
-          <Route path="/register" component={Reg} />
+          <Route path="/registration" component={Reg} />
         </Switch>
       </BrowserRouter>
     </div>
