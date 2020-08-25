@@ -67,7 +67,7 @@ const Login = (props) => {
           <>
             <Typography component="h1" variant="h5">
               Login
-            <Link to="/registration" >Registration</Link>
+            <Link to="/register" >Registration</Link>
             </Typography>
             <form className={classes.form} onSubmit={handleSubmit}>
               {err && <div>{err}</div>}
